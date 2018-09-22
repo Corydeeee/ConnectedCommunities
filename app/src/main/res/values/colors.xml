@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="christinaBlack">#2C303A</color>
+    <color name="penguinBlue">#2A439B</color>
 </resources>
