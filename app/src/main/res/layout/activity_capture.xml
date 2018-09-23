@@ -19,17 +19,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="DB" />
 
-    <Button
-        android:id="@+id/btn_record"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="188dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="52dp"
-        android:text="Test DB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
     <TextView
         android:id="@+id/txtStatus"
         android:layout_width="wrap_content"
@@ -49,12 +38,12 @@
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_record"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_subtext" />
 
     <ImageView
         android:id="@+id/img_owl"
@@ -80,16 +69,33 @@
         app:layout_constraintTop_toBottomOf="@+id/txtStatus"
         tools:text="subtext" />
 
-    <Button
+    <ImageButton
         android:id="@+id/btn_sendReport"
-        android:layout_width="134dp"
-        android:layout_height="48dp"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="Send Report"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_subtext" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_subtext"
+        app:srcCompat="@drawable/report" />
+
+    <ImageButton
+        android:id="@+id/btn_record"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/analyze" />
 
 </android.support.constraint.ConstraintLayout>
